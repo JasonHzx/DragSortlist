@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jasonhzx.dragsortlist.component.DragSortItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <FrameLayout
+        android:id="@+id/fl_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="67dp"
+            android:layout_height="44dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="16"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:singleLine="true"
+        android:textColor="#505864"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/fl_pre_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:src="@drawable/delete"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/sort" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#7fc8c7cc" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        android:visibility="gone" />
+</com.jasonhzx.dragsortlist.component.DragSortItemLayout>

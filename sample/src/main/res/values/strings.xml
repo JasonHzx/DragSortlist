@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DragSortList</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+</resources>
