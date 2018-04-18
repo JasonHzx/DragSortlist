@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jasonhzx.widget.dragsortlist.sample.R;
 import com.jasonhzx.dragsortlist.component.DragSortListLayout;
 
 import java.util.ArrayList;

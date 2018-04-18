@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.jasonhzx.widget.dragsortlist.sample.R;
 import com.jasonhzx.dragsortlist.component.DragSortItemLayout;
 import com.jasonhzx.dragsortlist.component.DragSortItemViewHolder;
 import com.jasonhzx.dragsortlist.component.DragSortListAdapter;
