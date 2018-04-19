@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -21,14 +21,14 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
 }
 
-//publish {
-//    userOrg = 'jason98k'
-//    groupId = 'com.jason98k'
-//    artifactId = 'DragSortList'
-//    publishVersion = '1.0.0'
-//    website = 'https://github.com/JasonHzx/DragSortlist'
-//}
+publish {
+    userOrg = 'jason98k'
+    groupId = 'com.jason98k'
+    artifactId = 'DragSortList'
+    publishVersion = '1.0.0'
+    website = 'https://github.com/JasonHzx/DragSortlist'
+}
 
