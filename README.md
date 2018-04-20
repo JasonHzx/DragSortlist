@@ -44,14 +44,11 @@ dependencies {
 
     <!--Sort Button (排序按钮必须实现)-->
 
-    <!--divider(分割线可选)-->
-
     <!--mask（遮罩层可选）-->
 
 </com.jasonhzx.dragsortlist.component.DragSortItemLayout>
 ```
 
-![](http://upload-images.jianshu.io/upload_images/1763614-eec83eb5a49a164c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **Extend DragSortListAdapter:**
 
