@@ -3,7 +3,9 @@ package com.jasonhzx.dragsortlist.sample;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initRecyclerView() {
         DragSortListLayout mRecyclerView = findViewById(R.id.recycler_view);
-
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
         String[] names = getResources().getStringArray(R.array.query_suggestions);
         List<String> mList = new ArrayList<>();
         Collections.addAll(mList, names);

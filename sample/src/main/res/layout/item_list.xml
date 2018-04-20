@@ -68,19 +68,6 @@
             android:src="@drawable/sort" />
     </FrameLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:background="#7fc8c7cc" />
-    </RelativeLayout>
-
     <FrameLayout
         android:id="@+id/mask"
         android:layout_width="match_parent"
