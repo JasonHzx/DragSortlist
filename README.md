@@ -70,17 +70,17 @@ public class MyAdapter extends DragSortListAdapter<Entity> {
     }
 
     @Override
-    public void onItemRemove(String item) {
+    public void onItemRemove(Entity item) {
         //获取被删除的Item
     }
 
     @Override
-    public void onItemClick(String item) {
+    public void onItemClick(Entity item) {
         //获取普通状态下被点击的Item
     }
 
     @Override
-    public void onItemClickEdit(String item) {
+    public void onItemClickEdit(Entity item) {
         //获取编辑状态下被点击的Item
     }
 
