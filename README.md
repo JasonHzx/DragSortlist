@@ -14,7 +14,7 @@ List component that support drag and drop sorting and edit deleting.
 
 ```javascript
 dependencies {
-    compile 'com.jason98k:DragSortList:1.0.0'
+    compile 'com.jason98k:DragSortList:1.0.2'
 }
 ```
 **In the activity layout file, replace the RecyclerView with DragSortListLayout:**
@@ -59,13 +59,13 @@ public class MyAdapter extends DragSortListAdapter<Entity> {
     }
 
     @Override
-    public DragSortItemViewHolder onCreateEditViewHolder(ViewGroup parent, int viewType) {
+    public DragSortItemViewHolder onCreateDragSortItemViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.item_list, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindEditViewHolder(DragSortItemViewHolder holder, int position) {
+    public void onBindDragSortItemViewHolder(DragSortItemViewHolder holder, int position) {
         // bind holder.vContent
     }
 

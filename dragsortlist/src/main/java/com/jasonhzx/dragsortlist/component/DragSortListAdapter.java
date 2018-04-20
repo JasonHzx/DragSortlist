@@ -32,10 +32,8 @@ public abstract class DragSortListAdapter<T> extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return onCreateEditViewHolder(parent, viewType);
+        return onCreateDragSortItemViewHolder(parent, viewType);
     }
-
-    public abstract DragSortItemViewHolder onCreateEditViewHolder(ViewGroup parent, int viewType);
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
@@ -48,7 +46,7 @@ public abstract class DragSortListAdapter<T> extends RecyclerView.Adapter {
 
         editLayout.setEdit(isEdit);
 
-        onBindEditViewHolder(viewHolder, position);
+        onBindDragSortItemViewHolder(viewHolder, position);
 
         viewHolder.vPreDelete.setOnTouchListener(new View.OnTouchListener() {
 
@@ -143,6 +141,10 @@ public abstract class DragSortListAdapter<T> extends RecyclerView.Adapter {
 
     }
 
+    public abstract DragSortItemViewHolder onCreateDragSortItemViewHolder(ViewGroup parent, int viewType);
+
+    public abstract void onBindDragSortItemViewHolder(DragSortItemViewHolder holder, int position);
+
     public abstract void onItemClick(T item);
 
     public abstract void onItemClickEdit(T item);
@@ -163,7 +165,6 @@ public abstract class DragSortListAdapter<T> extends RecyclerView.Adapter {
         return mRightOpenItem != null;
     }
 
-    public abstract void onBindEditViewHolder(DragSortItemViewHolder holder, int position);
 
     @Override
     public int getItemCount() {

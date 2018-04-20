@@ -35,13 +35,13 @@ public class MainListAdapter extends DragSortListAdapter<String> {
     }
 
     @Override
-    public DragSortItemViewHolder onCreateEditViewHolder(ViewGroup parent, int viewType) {
+    public DragSortItemViewHolder onCreateDragSortItemViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.item_list, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindEditViewHolder(DragSortItemViewHolder holder, int position) {
+    public void onBindDragSortItemViewHolder(DragSortItemViewHolder holder, int position) {
         final TextView tvName = (TextView) holder.vContent;
         tvName.setText(mList.get(position));
     }
