@@ -5,7 +5,6 @@
 # DragSortList
 
 List component that support drag and drop sorting and edit deleting.
-支持拖拽排序和编辑删除的列表控件。
 
 ![](https://github.com/JasonHzx/DragSortlist/blob/master/demo.gif)
 
@@ -60,13 +59,13 @@ public class MyAdapter extends DragSortListAdapter<Entity> {
     }
 
     @Override
-    public EditViewHolder onCreateEditViewHolder(ViewGroup parent, int viewType) {
+    public DragSortItemViewHolder onCreateEditViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.item_list, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindEditViewHolder(EditViewHolder holder, int position) {
+    public void onBindEditViewHolder(DragSortItemViewHolder holder, int position) {
         // bind holder.vContent
     }
 
@@ -107,6 +106,7 @@ public class MyAdapter extends DragSortListAdapter<Entity> {
     }
 }
 ```
+
 
 
 
