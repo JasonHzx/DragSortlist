@@ -107,7 +107,7 @@ public class MyAdapter extends DragSortListAdapter<Entity> {
 }
 ```
 
-
+更多内容请看 [Wiki pages](https://github.com/JasonHzx/DragSortlist/wiki/%E8%AF%A6%E8%A7%A3%E6%8B%96%E6%8B%BD%E6%8E%92%E5%BA%8F%EF%BC%9A-ItemTouchHelper-%E5%AE%9E%E8%B7%B5)
 
 
 
